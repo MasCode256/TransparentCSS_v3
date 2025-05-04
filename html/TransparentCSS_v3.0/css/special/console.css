@@ -1,0 +1,31 @@
+#console {
+  position: absolute;
+
+  bottom: 5vh;
+  left: 2vw;
+
+  transition: var(--long-transition);
+
+  &:hover {
+    z-index: 0;
+    opacity: 0.1;
+  }
+
+  & * {
+    transition: var(--long-transition);
+
+    font-size: smaller;
+    font-family: var(--ff3);
+
+    margin-top: 1vh;
+
+    &.time {
+      /*color: var(--secondary);*/
+      text-shadow: var(--small-text-shadow);
+      font-family: var(--ff2);
+      font-size: smaller;
+
+      opacity: 0.5;
+    }
+  }
+}
