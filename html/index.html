@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My PyWebview project</title>
 
+    <link rel="stylesheet" href="TransparentCSS_v3.0/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <script defer src="TransparentCSS_v3.0/js/script.js"></script>
+  </head>
+  <body>
+    <div class="center-y box">
+      <h1>Hello, world!</h1>
+      <p>
+        This is example for CSS testing.<a href="index.html"
+          ><i class="fas fa-home"></i>Reload page</a
+        >
+        <a href="" class="secondary">Secondary link example</a>
+      </p>
+    </div>
+    <div class="center-y margin-top">
+      <h2 class="font-2">H2.font-2</h2>
+      <div class="center-x">
+        <input
+          class="fa wide"
+          type="text"
+          placeholder="&#xf002; Search example"
+          id="test-inp"
+        />
+        <button
+          class="primary element-with-description"
+          onclick="TransparentCSS.log({}, document.getElementById('test-inp').value)"
+          data-description="Print input value into the console."
+        >
+          <i class="fa-solid fa-terminal"></i>
+          Print
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
